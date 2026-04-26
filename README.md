@@ -1,58 +1,65 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 CRUD Usuarios - Laravel 11 (Futuristic Edition)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este es un proyecto de gestión de usuarios desarrollado con **Laravel 11**, diseñado con una estética futurista y minimalista. Utiliza efectos de **Glassmorphism** y una paleta de colores Dark Mode con acentos en Cyan y Ámbar para ofrecer una experiencia de usuario moderna y limpia.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📸 Vista Previa
+![Diseño del Panel](https://via.placeholder.com/800x400?text=Vista+del+Panel+Futurista+de+Cristian) 
+*(Nota: Aquí puedes subir tus capturas de pantalla a la carpeta 'public' y poner el link real)*
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🛠️ Tecnologías y Herramientas
+* **Framework:** Laravel 11.x
+* **Entorno:** [Laravel Herd](https://herd.laravel.com/) (Zero-config local development).
+* **Estilos:** [Tailwind CSS](https://tailwindcss.com/) via CDN.
+* **Base de Datos:** MySQL (gestionada a través de Herd/DBngin).
+* **Lenguajes:** PHP 8.2+, HTML5, CSS3.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Características Principales
+* **Full CRUD:** Crear, Leer, Editar y Eliminar usuarios de forma dinámica.
+* **UI Futurista:** * Fondos con desenfoque (backdrop-filter).
+    * Bordes de neón responsivos.
+    * Tipografía limpia y profesional.
+* **Arquitectura MVC:** Separación clara entre Modelos, Vistas y Controladores.
+* **Mass Assignment:** Configuración de seguridad en el modelo `User`.
 
-## Learning Laravel
+## 🚀 Instalación Local
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Si quieres clonar este proyecto y probarlo en tu máquina:
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone [https://github.com/cristianvelascoinfo-pro/crud-usuarios-laravel-CVlsco.git]
+    cd crud-usuarios
+    ```
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+2.  **Instalar dependencias de PHP:**
+    ```bash
+    composer install
+    ```
 
-## Agentic Development
+3.  **Configurar variables de entorno:**
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+4.  **Configurar Base de Datos:**
+    Abre tu archivo `.env` y asegúrate de que los datos de `DB_DATABASE`, `DB_USERNAME` y `DB_PASSWORD` coincidan con tu configuración local.
 
-```bash
-composer require laravel/boost --dev
+5.  **Ejecutar Migraciones:**
+    ```bash
+    php artisan migrate
+    ```
 
-php artisan boost:install
-```
+6.  **Lanzar la aplicación:**
+    Si usas Herd, simplemente entra a `http://crud-usuarios.test`. Si no, usa:
+    ```bash
+    php artisan serve
+    ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+## 🎥 Contenido Educativo
+Este proyecto fue creado como parte de un tutorial técnico para demostrar la facilidad de uso de **Laravel 11** y el potencial de diseño de **Tailwind CSS**.
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+**Desarrollado por [Cristian]** *Si te sirvió este proyecto, ¡no olvides darle una ⭐ en GitHub!*
