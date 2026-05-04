@@ -34,6 +34,11 @@
         }
     },
     "scripts": {
+        "inicio": [
+            "echo 🚀 Proyecto listo!",
+            "echo 🔗 URL Local (Herd): http://crud-usuarios.test",
+            "echo 🌍 URL Producción: https://crud-usuarios-laravel-cvlsco-production.up.railway.app"
+        ],
         "setup": [
             "composer install",
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
